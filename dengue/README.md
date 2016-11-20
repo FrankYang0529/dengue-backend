@@ -117,4 +117,13 @@ Install Node.js and npm, we require node v4.x.x or higher and npm 3.x.x or highe
     cd static/
     npm install
     npm run typings install
-    npm tsc
+    npm run tsc
+
+## Script
+
+### parse-winners.py
+
+    with open('../tools/parse-winners.py') as f:
+        code = compile(f.read(), "../tools/parse-winners.py", 'exec')
+        exec(code)
+
